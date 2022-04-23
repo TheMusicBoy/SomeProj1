@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    display: inline-flex;
+}
+
+.wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 0 auto;
+    justify-content: stretch;
+
+
+    background: radial-gradient(circle at 100% 100%, #FF905800, #00705DFF), radial-gradient(circle at 0% 100%, #2F485800, #FF9058FF),
+    radial-gradient(circle at 0% 0%, #80619300, #eb7183), radial-gradient(circle at 100% 0%, #EB717C00, #806193FF) fixed;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    background: #303030B0;
+    box-shadow: 0px 0px 20px #606060;
+}
+
+nav a {
+    padding:20px;
+
+    text-decoration: none;
+    font-family: Arial;
+    font-size:30px;
+    color: white;
+
+    background: #00000000;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    color: black;
+    background: #F0F0F0c0;
+}
+
+main {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 0 auto;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial;
+    color: white;
+}
+
+.Comment {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    max-width: 90%;
+
+    margin: 20px 40px;
+    padding: 30px;
+
+    border-radius: 10px;
+    background: #303030B0;
+    box-shadow: 0px 0px 20px #606060;
+}
+
+main h1 {
+    font-size:150px;
+}
+
+main h2 {
+    font-size:114px;
+}
+
+main h3 {
+    font-size:86px
+}
+
+main h4 {
+    font-size:64px;
+}
+
+main a {
+    font-size:40px;
+    text-decoration: none;
+    color: white;
+
+    transition-duration: 0.3s;
+}
+
+main a:hover {
+    color: #FF9058FF;
+}

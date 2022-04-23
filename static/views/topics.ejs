@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Progger | <%=title%></title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <a href="/">Main</a>
+            <a href="/posts">Posts</a>
+            <a href="/about">About us</a>
+        </nav>
+        <main>
+            <h1><%=title%> page</h1>
+            <% if(posts.length) { %>
+                <% let id = 0; %>
+                <% posts.forEach(({name, text}) => { %>
+                    <div class="Comment">
+                        <a href = "/posts/?id=<%=id++%>"><%=name%></a>
+                        <p><%=text%></p>
+                    </div>
+                <% }) %>
+            <% } %>
+        </main>
+        <footer>
+            
+        </footer>
+    </div>
+</body>
+</html>
